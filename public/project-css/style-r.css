@@ -1,0 +1,281 @@
+/* introducing marging and padding on the body to remove unnecessary space
+outside and inside of the body container */
+
+*{
+margin: 0;
+padding: 0;
+
+}
+
+html{
+
+  box-sizing: border-box;
+}
+/* Styling the body with background image and color */
+body{
+
+  background-color: darkcyan;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* introducing flex to put items in hearder in line and using
+justify-content to put space in between them */
+header{
+display: flex;
+
+height: 5vw;
+justify-content: space-between;
+background-color: aliceblue;
+
+}
+
+/* Styling company logo and giving it the same hight with the header */
+.logo {
+background-image: url(../images-jpg/logo.jpg);
+background-size: cover;
+background-position: center;
+height: 5vw;
+width: 7vw;
+
+}
+
+/*Styling the welcome message with italic  */
+.welcome {
+font-size: 2vw;
+margin: auto;
+color: cornsilk;
+font-style: italic;
+
+}
+
+/* Removing the underline on the text of the nav bar by 
+using text-decoration none */
+a{  
+
+  text-decoration: none;
+  color: cornsilk
+}
+/* using active synthax to make the color of nav bar to be red
+once active */
+a:active{
+  color: red;
+}
+
+/* displayed flex and used justify-content to have space evenly
+distributed in the nav bar */
+
+ul.nav1 {
+
+  display: flex;
+  margin: 0;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 50vw;
+  align-items: center;
+  height: 5vw;
+  font-size: 2vw;
+
+}
+
+/* Used hover to have the color of nav bar changed to lawngreen
+when it is hovered with mouse */
+a:hover{
+  background-color: lawngreen;
+}
+/* styled the contact message */
+.contact {
+
+  font-size: 2vw;
+  margin: 2em;
+  color: aliceblue;
+}
+/* displayed the background image of the hero section and have it 
+ take the full shape of the website */
+header.heroSection {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(../images-jpg/register.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+/* styled the contact information */
+h1{
+  font-size: 2vw;
+  display: flex;
+  font-style: italic; 
+  margin: 1em;
+  align-items: center;
+  color: aliceblue;
+}
+ul{
+  font-size: 2vw;
+  color: aliceblue;
+
+}
+
+/* increase the font size of div container and also changed the color of text */
+
+div{
+
+  font-size: 32px;
+  color: black;
+}
+
+/* styling the experience container by giving margin top and 
+bottom 5vh so as to separate it from the hero image and photo
+galary */
+.experience {
+
+  text-align: center;
+  color: black;
+  font-size: 2vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+ }
+/* displayed flex to have the photo galary to be in line. Then used
+flex-wrap to have it display in multiple row and used justify-
+content space-around to have it have space between the images */
+ .photos{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+ }
+
+ .travel2{
+ 
+  background-image: url("../images-jpg/travelone.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 25vw;
+  height: 25vw;
+  font-size: 2vw;
+  color: black;
+  
+
+ }
+
+ .travel2>*, .travel3>*, .travel4>*, .travel5>*,.travel6>*,.travel7>*{
+   color: black;
+ }
+
+ /* style images by attaching background-image, background-size, height and width sizes */
+  .travel3{
+   background-image: url("../images-jpg/traveltwo.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 25vw;
+   height: 25vw;
+   font-size: 2vw;
+   color: black;
+  }
+
+  .travel4{
+    background-image: url("../images-jpg/travelone.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 25vw;
+    height: 25vw;
+    font-size: 2vw;
+    color: black;
+  }
+
+  .travel5{
+
+    background-image: url("../images-jpg/travelone.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 25vw;
+    height: 25vw;
+    font-size: 2vw;
+    color: black;
+  }
+
+  .travel6{
+
+    background-image: url("../images-jpg/travelone.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 25vw;
+    height: 25vw;
+    font-size: 2vw;
+    color: black;
+
+  }
+
+  .travel7{
+    background-image: url("../images-jpg/travelone.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 25vw;
+    height: 25vw;
+    font-size: 2vw;
+    color: black;
+  }
+ 
+/* used grid to style the form */
+  
+.form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 2em;
+  margin-bottom: 5em;
+}
+
+.full-width{
+  grid-column: auto;
+  display: grid;
+  grid: inherit;
+  grid-template-columns: subgrid;
+  grid-gap: inherit;
+
+}
+
+/* used media query to make the form adaptable in desk-top, mobile and tablet devices */
+
+@media (max-width: 600px) {
+  .form-inline input {
+    margin: 30px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* insert styles for invalid form input */
+}
+input:required:invalid, input:focus:invalid {
+  
+  background-color: lightcoral;
+}
+
+/* style the footer container by increasing the fonsize and changing the color of the text */
+
+footer{
+      font-size: 2vw;
+      text-align: center;
+      padding-top: 5vh;
+      color: blanchedalmond;
+      
+    }
+
+
+    /* put additional style on the footer with hover synthax so that when it is hovered on, blue color will be displayed. */
+footer:hover{
+
+  background-color: blue;
+  text-decoration: underline;
+}
+

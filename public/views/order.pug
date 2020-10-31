@@ -1,0 +1,64 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='description' content='travel agent site')
+  meta(name='author' content='Ndubuisi Okpala')
+  title Ndchris Travel Agent Website
+  link(rel='stylesheet' type='text/css' href='../project-css/order.css')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap' rel='stylesheet')
+// setting the logo, welcome note and nav bar in one container
+header
+  .top
+    label.logo  
+    h1.welcome WELCOME TO TRAVEL EXPERT
+    nav
+      ul.nav1
+        
+        li
+          a(href='../contact') Contact
+        li
+          a(href='../register') Register
+        li
+          a(href='../index') Home
+        li
+          a(href='../packages') Packages
+        
+main
+  h1.order ORDER FORM
+  div
+    // creating form and also adding HTML5 securities on them
+    form.form-inline(action='/form-inline' method='post')
+      label.full-width(for='password') Password (minimum of 7 characters):
+      input#pass(type='password' name='password' minlength='7' required='' pattern='[a-zA-Z0-9\s]+' placeholder='Enter your password')
+      label.full-width(for='name') Full Name
+      input#name(type='text' name='name' required='' pattern='[a-zA-Z\s]+' placeholder='Enter your full name')
+      label.full-width(for='phonenum') Phone Number (formart:x-xxx-xxx-xxxx):
+      input#phonenum(type='tel' name='phonenum' required='' pattern='^\d{1}-\d{3}-\d{3}-\d{4}$' placeholder='Enter your phone')
+      label.full-width(for='email') Email
+      input#email(type='email' name='email' required='' placeholder='Enter your email')
+      label.full-width(for='package_name') Package Name
+      input#package_name(type='package_name' name='package_name' required='' pattern='')
+      label.full-width(for='package_description') Package Description
+      input#package_description(type='package_description' name='package_description' required='' pattern='')
+      label.full-width(for='package_start_date') Package Start-Date
+      input#package_start_date(type='package_start_date' name='package_start_date' required='' pattern='')
+      label.full-width(for='package_end_date') Package End-Date
+      input#package_end_date(type='package_end_date' name='package_end_date' required='')
+      label.full-width(for='package_price') Package Price 
+      input#package_price(type='package_price' name='package_end_date' required='')
+      label.full-width(for='travel_count') Travel Count 
+      input#travel_count(type='travel_count' name='travel_count' required='')
+      label.full-width(for='message') Message
+      textarea#message(name='message' required='' placeholder='Enter your message')
+      br
+      //
+        <label>
+        <input type="checkbox" name="remember" required> Remember me
+        </label>
+      button(type='submit') Submit
+// linking the javascript file to HTML
+script(src='../project-js/main-r.js')
+footer
+  // puting the copyright symbol on the footer
+  p.copyright &copy; 2020 Travel Expert

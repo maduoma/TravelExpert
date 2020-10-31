@@ -1,0 +1,159 @@
+/* to set the body margin and padding to zero */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* to set background color */
+
+body{
+
+  background-color: royalblue;
+  line-height: 1;
+}
+
+/* Displayed flex to the header container to put the logo, welcome statement and nav bar to be in line
+also used justify-content to put space between them */
+.top{
+display: flex;
+height: 5vw;
+justify-content: space-between;
+background-color: aliceblue;
+
+}
+ /* display the background image of the logo */
+.logo {
+background-image: url(../images-jpg/logo.jpg);
+background-size: cover;
+background-position: left;
+height: 5vw;
+width: 7vw;
+margin: 0;
+
+}
+/* increased the font size of the welcome message */
+.welcome {
+font-size: 2vw;
+margin: auto;
+
+}
+
+/* Used text-decoration synthax to remove the underline in the 
+text on nav bar */
+a{  
+
+  text-decoration: none;
+  color: black;
+}
+
+/* Used active synthax to dispaly a red color once one of the nav bars
+is clicked or active */
+a:active{
+  color: red;
+}
+
+/* styled the nav bars to have them spaced evenly, increased the font size as well */
+ul.nav1 {
+
+  display: flex;
+  margin: 0;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 50vw;
+  align-items: center;
+  height: 5vw;
+  font-size: 2vw;
+
+}
+/* add some style with hover synthax to have the nav bars change color
+when hovered around it */
+a:hover{
+  background-color: lawngreen;
+  text-decoration: blue;
+}
+
+.order{
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+
+.form-inline{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 1em;
+  margin: 1em;
+  font: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+
+label {
+  grid-column: 1/2;
+  
+}
+
+input, textarea{
+  grid-column: 2/3;
+}
+
+.submit{
+  grid-column: 2/3;
+}
+@media screen and (max-width: 767px) { 
+  .form-inline {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin: 1em;
+  }
+
+  label{
+    grid-column: 1/2;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+  }
+
+  input, textarea{
+    grid-column: 1/2;
+  }
+  .submit{
+    grid-column: 1/2;
+  }
+}
+
+
+
+
+
+
+
+
+/* aligning the copyright text to centre, increased the font size and added some margin top to give space from the picture galaries. */
+  footer{
+
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 2vw;
+  }
+
+  /* putting some styles in the footer by changing the background color of the footer when hovered around it and also to change the text style to underline */
+  footer:hover{
+
+    text-decoration: underline;
+    background-color: lawngreen;
+  }

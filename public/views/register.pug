@@ -1,0 +1,91 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='description' content='travel agent site')
+  meta(name='author' content='Ndubuisi Okpala')
+  title Ndchris Travel Agent Website
+  link(rel='stylesheet' type='text/css' href='../project-css/style-r.css')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap' rel='stylesheet')
+// setting the logo, welcome note and nav bar in one container
+header.heroSection
+  label.logo  
+  h1.welcome  REGISTER FOR YOUR BEST TRAVEL DEALS
+  nav
+    ul.nav1
+     
+      li
+        a(href='../contact') Contact
+      li
+        a(href='../register') Register
+      li
+        a(href='../index') Home
+      li
+        a(href='../packages') Packages
+      
+main
+  p
+  h1 REGISTER AND GET REWARDED
+  p
+  // creating the photo galary section
+  br
+  h2.experience Exciting Experience with Ndchris Travel and Tours
+  .photos
+    .travel2
+      a(href='../project-html/register.html') Sing up for Tailor Made Holiday
+    .travel3
+      a(href='../project-html/register.html') Sing up for Westjet Vacation
+    .travel4
+      a(href='../project-html/register.html') Register for Multi-city Flight
+    .travel5
+      a(href='../project-html/register.html') Sing up for Royal Carebbean Vacation
+    .travel6
+      a(href='../project-html/register.html') Sing up for for celebrity cruise
+    .travel7
+      a(href='../project-html/register.html') Sing up for Air Canada Vacation Discountt
+  p
+  h1 For your Reservation, please call :
+  p
+  ul Toll Free : 5878794373
+  ul Phone Number : 5878007070
+  ul Email : info@ndchristravels.ca
+  h1 Registration Form
+  // creating form and also adding HTML5 securities on them
+  form.form-inline(action='/form-inline' method='post')
+    label.full-width(for='pass')
+      span.enter-text  Password (minimum of 7 characters):
+      input#pass(type='password' name='password' minlength='7' required='' pattern='[a-zA-Z0-9\s]+' placeholder='Enter your password')
+    label.full-width(for='name')
+      span.enter-text  Full Name
+      input#name(type='text' name='name' required='' pattern='[a-zA-Z\s]+' placeholder='Enter your full name')
+    label.full-width(for='phonenum')
+      span.enter-text  Phone Number (formart:x-xxx-xxx-xxxx):
+      input#phonenum(type='tel' name='phonenum' required='' pattern='^\d{1}-\d{3}-\d{3}-\d{4}$' placeholder='Enter your phone')
+    label.full-width(for='email')
+      span.enter-text  Email
+      input#email(type='email' name='email' required='' placeholder='Enter your email')
+    label.full-width(for='address')
+      span.enter-text  Address
+      input#address(type='address' name='address' required='' pattern='[a-zA-Z0-9\s]+' placeholder='Enter your address')
+    label.full-width(for='city')
+      span.enter-text  City
+      input#city(type='city' name='city' required='' pattern='[a-zA-Z\s]+' placeholder='Enter your city')
+    label.full-width(for='province')
+      span.enter-text  Province
+      input#province(type='province' name='province' required='' placeholder='Enter your province')
+    label.full-width(for='postalCode')
+      span.enter-text  Postal Code
+      input#postalCode(type='postal-code' name='postalCode' required='' pattern='[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]' placeholder='Enter your postal Scode')
+    label.full-width(for='message')
+      span.enter-text  Message
+      textarea#message(name='message' required='' placeholder='Enter your message')
+    //
+      <label>
+      <input type="checkbox" name="remember" required> Remember me
+      </label>
+    button(type='submit') Submit
+// linking the javascript file to HTML
+script(src='../project-js/main-r.js')
+footer
+  // puting the copyright symbol on the footer
+  p.copyright &copy; Travel Expert

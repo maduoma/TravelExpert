@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='description' content='travel agent site')
+  meta(name='author' content='Ndubuisi Okpala')
+  title Ndchris Travel Agent Website
+  link(rel='stylesheet' type='text/css' href='../project-css/style.css')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap' rel='stylesheet')
+header.heroSection
+  .top
+    label.logo  
+    h1.welcome  WELCOME TO TRAVEL EXPERT
+    nav
+      ul.nav1
+       
+        li
+          a(href='../contact') Contact
+        li
+          a(href='../register') Register
+        li
+          a(href='../index') Home
+        li
+          a(href='../packages') Packages
+        
+  p
+  h1.caption
+    | BEST EXPERIENCE
+  p
+main
+  h2.experience Exciting Experience with Travel Expert! We are here to provide you with the best affordable travel packages you will ever get.
+  .photos
+    //
+      <div class="travel2"><a href="#">Sing up for exciting experience for Summer Discount</a></div>
+      <div class="travel2"><a href="#">Sing up for exciting experience for Family Discount</a></div>
+      <div class="travel2"><a href="#">Sing up for exciting experience for Group Discount</a></div>
+      <div class="travel2"><a href="#">Sing up for exciting experience for Company Discount</a></div>
+      <div class="travel2"><a href="#">Sing up for exciting experience for Premium Discount</a></div>
+      <div class="travel2"><a href="#">Sing up for exciting experience for Frequent Travellers Discount</a></div>
+
+
+//- Javascript linking the picture galary
+script(src='../project-js/main.js')
+
+div.package!= gallery2
+footer
+  p.copyright  &copy; 2020 Travel Expert

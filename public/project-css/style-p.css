@@ -1,0 +1,190 @@
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+
+  background-color: royalblue;
+  line-height: 1;
+}
+/* Displayed flex to the header container to put the logo, welcome statement and nav bar to be in line
+also used justify-content to put space between them */
+.top{
+display: flex;
+height: 5vw;
+justify-content: space-between;
+background-color: aliceblue;
+
+}
+ /* display the background image of the logo */
+.logo {
+background-image: url(../images-jpg/logo.jpg);
+background-size: cover;
+background-position: left;
+height: 5vw;
+width: 7vw;
+margin: 0;
+
+}
+/* increased the font size of the welcome message */
+.welcome {
+font-size: 2vw;
+margin: auto;
+
+}
+
+/* Used text-decoration synthax to remove the underline in the 
+text on nav bar */
+a{  
+
+  text-decoration: none;
+  color: black;
+}
+
+/* Used active synthax to dispaly a red color once one of the nav bars
+is clicked or active */
+a:active{
+  color: red;
+}
+
+/* styled the nav bars to have them spaced evenly, increased the font size as well */
+ul.nav1 {
+
+  display: flex;
+  margin: 0;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 50vw;
+  align-items: center;
+  height: 5vw;
+  font-size: 2vw;
+
+}
+/* add some style with hover synthax to have the nav bars change color
+when hovered around it */
+a:hover{
+  background-color: lawngreen;
+  text-decoration: blue;
+}
+ /* displayed the background image of the hero section and have it 
+ take the full shape of the website */
+header.heroSection {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("../images-jpg/travel1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr,1fr,1fr,1fr;
+  grid-template-rows: 1fr, 2fr, 1fr ;
+
+}
+
+/* have a caption word displayed in the hero */
+ caption {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 5vw;
+ grid-column-start: 6;
+ grid-row-start: 6;
+ color: ivory;
+ text-align: center;
+
+ }
+
+ main{
+margin: auto;
+padding: 0;
+width: 85vw;
+ }
+
+ /* to have the inscription in the hero image have a color of antiquewhite and font
+ style italic */
+ .caption{
+
+ color: antiquewhite;
+ font-style: italic;  
+ }
+
+
+ /* styled this with italic and added some padding top and bottom to have
+ a space between the hero section and picture galaries */
+ h2{
+ font-size: 2vw;
+ font-family: Arial, Helvetica, sans-serif;
+ font-style: italic ;
+ color: darkgray;
+ padding-top: 5vh;
+ padding-bottom: 5vh;
+
+ }
+/* style the letter above the photo galary */
+ .experience {
+
+  text-align: center;
+  color: aliceblue;
+  font-style: italic;
+ }
+
+ /* style the photo galary with flexbox */
+ /* .photos {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  margin: auto;
+  font-size: 3.5em;
+  color: black;  
+
+ } */
+
+ /* style the package galary with flexbox */
+
+ .package{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: inherit;
+  justify-content: space-between;
+  padding: 5px;
+  font-size:1.2em;
+  text-align: inherit;
+  margin-right: 50px;  
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black
+
+ }
+
+ 
+/* aligning the copyright text to centre, increased the font size and added some margin top to give space from the picture galaries. */
+  footer{
+
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 2vw;
+  }
+
+  /* putting some styles in the footer by changing the background color of the footer when hovered around it and also to change the text style to underline */
+  footer:hover{
+
+    text-decoration: underline;
+    background-color: lawngreen;
+  }

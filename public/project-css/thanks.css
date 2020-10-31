@@ -1,0 +1,21 @@
+*{ 
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  }
+
+  body{
+
+    background-image: url("../images-jpg/travel22.jpg");
+    background-image: no-repeat center center fixed;
+    background-size: cover;
+    
+  }
+
+  h1{
+    font-style: italic;
+    text-align: center;
+    margin: 5em;
+  }
