@@ -17,7 +17,7 @@ const port = process.env.port || 8000;
 
 app.listen(port, (err) => {
   if (err) throw err;
-  console.log(`server started on port ${port}`);
+  console.log(`server started on port http://localhost:${port}`);
 });
 
 // use express static to get CSS, Images and Javascript files from subdirectory public
@@ -64,7 +64,7 @@ const db = mysql.createConnection({
   user: "root",
   password: "password",
   // this should be commented out before database is created with the synthax below, if not it will throw error
-  database: "nodemysql",
+  //database: "nodemysql",
   database: "travelexperts",
 });
 
