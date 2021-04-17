@@ -3,17 +3,17 @@ head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   meta(name='description' content='travel agent site')
-  meta(name='author' content='Ndubuisi Okpala')
-  title Ndchris Travel Agent Website
+  meta(name='author' content='Maduabughichi Achilefu')
+  title Travel Agent Website
   link(rel='stylesheet' type='text/css' href='../project-css/style-c.css')
   link(href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap' rel='stylesheet')
 header
   // have the logo, welcome note and nav bar wrapped in one container
-  label.logo  
+  label.logo
   h1.welcome  WELCOME TO TRAVEL EXPERT
   nav
     ul.nav1
-      
+
       li
         a(href='../contact') Contact
       li
@@ -22,7 +22,7 @@ header
         a(href='../index') Home
       li
         a(href='../packages') Packages
-      
+
 main
   // used paragraph and list tag to display the contact information of the travel agents
   p
@@ -38,12 +38,12 @@ main
   h1 Address
   div
     br
-    | Ndchris Travel and Tours 
+    | Ndchris Travel and Tours
     br
-    | Suit # 102 1104 Country Hills Street 
+    | Suit # 102 1104 Country Hills Street
     br
     | Calgary
-    |         Alberta 
+    |         Alberta
     br
     | Canada
   p
@@ -51,53 +51,53 @@ main
   h1 Hours of Operation
   div
     br
-    | Mondays to Friday 9:00am to 5:00pm MDT 
+    | Mondays to Friday 9:00am to 5:00pm MDT
     br
     | Saturdays by appointment
   p
   .info
     .md
-      | Name : Carol Richard 
+      | Name : Carol Richard
       br
-      |  MD ndchristravels 
+      |  MD ndchristravels
       br
-      |  &#x2709; Email: carolrichard@ndchristravels.com 
+      |  &#x2709; Email: carolrichard@ndchristravels.com
       br
       |  &#x2121;
       |         Phone Number: 768-889-6675
     .vp
-      | Name : Charles Cole 
+      | Name : Charles Cole
       br
-      |  Vice President ndchristravels 
+      |  Vice President ndchristravels
       br
-      |  &#x2709; Email: charlescole@ndchristravels.com 
+      |  &#x2709; Email: charlescole@ndchristravels.com
       br
       |         &#x2121; Phone Number: 777-228-1234
     .manager
-      | Name : Francis Kester 
+      | Name : Francis Kester
       br
-      |  Marketing Manager 
+      |  Marketing Manager
       br
-      |  &#x2709; Email: franciskester@ndchristravels.com 
+      |  &#x2709; Email: franciskester@ndchristravels.com
       br
       |  &#x2121;
       |         Phone Number: 687-890-0070
     .it-manager
-      | Name : Christian Kevin 
+      | Name : Christian Kevin
       br
-      |  Information Technology Manager 
+      |  Information Technology Manager
       br
       |  &#x2709; Email:
-      |         christiankevin@ndchristravels.com 
+      |         christiankevin@ndchristravels.com
       br
       |  &#x2121;
       |         Phone Number: 687-890-0071
-  
+
 
   // Information of the agencies from the travelexpert database
 main.ouragency
-  section.ourinfo 
-    h2 Contact Our Agency: 
+  section.ourinfo
+    h2 Contact Our Agency:
     br
     h3 Calgary Office
     h3 !{agencies[0].AgncyAddress}
@@ -107,7 +107,7 @@ main.ouragency
     h3 !{agencies[0].AgncyCountry} !{agencies[0].AgncyPostal}
     br
     h3 !{agencies[0].AgncyPhone}
-  
+
   figure.map
     iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.3845448110987!2d-114.09056018403193!3d51.045986952154756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe76e972489%3A0x149461cedf5b7c5b!2s1155%208%20Ave%20SW%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1584735635006!5m2!1sen!2sca' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='')
 
@@ -116,7 +116,7 @@ h1.break Agents Contact:
 
 // Company Agencies and their details from database
 div.agencies
-  section.agents 
+  section.agents
     h1 Agency 1
     table.box
       tr.head
@@ -131,7 +131,7 @@ div.agencies
             th= item.AgtBusPhone
             th= item.AgtEmail
 
-  section.agents 
+  section.agents
     h1 Agency 2
     table.box
       tr.head

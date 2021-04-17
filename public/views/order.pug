@@ -3,18 +3,18 @@ head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   meta(name='description' content='travel agent site')
-  meta(name='author' content='Ndubuisi Okpala')
-  title Ndchris Travel Agent Website
+  meta(name='author' content='Maduabughichi Achilefu')
+  title Travel Agent Website
   link(rel='stylesheet' type='text/css' href='../project-css/order.css')
   link(href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap' rel='stylesheet')
 // setting the logo, welcome note and nav bar in one container
 header
   .top
-    label.logo  
+    label.logo
     h1.welcome WELCOME TO TRAVEL EXPERT
     nav
       ul.nav1
-        
+
         li
           a(href='../contact') Contact
         li
@@ -23,7 +23,7 @@ header
           a(href='../index') Home
         li
           a(href='../packages') Packages
-        
+
 main
   h1.order ORDER FORM
   div
@@ -45,9 +45,9 @@ main
       input#package_start_date(type='package_start_date' name='package_start_date' required='' pattern='')
       label.full-width(for='package_end_date') Package End-Date
       input#package_end_date(type='package_end_date' name='package_end_date' required='')
-      label.full-width(for='package_price') Package Price 
+      label.full-width(for='package_price') Package Price
       input#package_price(type='package_price' name='package_end_date' required='')
-      label.full-width(for='travel_count') Travel Count 
+      label.full-width(for='travel_count') Travel Count
       input#travel_count(type='travel_count' name='travel_count' required='')
       label.full-width(for='message') Message
       textarea#message(name='message' required='' placeholder='Enter your message')
